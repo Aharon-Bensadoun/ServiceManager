@@ -1,0 +1,152 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	}
+
+	ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3a4969;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	font-size: 18px;
+	text-decoration: none;
+	}
+
+	li {
+	float: left;
+	text-decoration: none;
+	}
+
+	li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 30px 50px;
+	text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+	background-color: #5a8ca8;
+	}
+
+	.active {
+	background-color: #4b69ee;
+	}
+	.button {
+	border-radius: 4px;
+	background-color: #3f8d0c;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 16px;
+	padding: 7px;
+	width: 150px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	float: right;
+	}
+
+	.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	}
+
+	.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+	}
+
+	.button:hover span {
+	padding-right: 25px;
+	}
+
+	.button:hover span:after {
+	opacity: 1;
+	right: 0;
+	}
+
+	br {
+	display: block;
+	margin: 10px 0;
+
+	}
+	.panel-heading {
+	font-weight: bold;
+	}
+p {
+	font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #484848;
+	}
+/* Popup Open button */	
+.open-button{
+	color:#FFF;
+	background:#0066CC;
+	padding:10px;
+	text-decoration:none;
+	border:1px solid #0157ad;
+	border-radius:3px;
+}
+.open-button:hover{
+	background:#01478e;
+}
+
+.popup {
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.75);
+	width:100%;
+	height:100%;
+	display:none;
+}
+
+/* Popup inner div */
+.popup-content {
+	width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-top: 100px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,1);
+    border-radius: 3px;
+    background: #fff;
+    position: relative;
+}
+
+/* Popup close button */
+.close-button {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.8);
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+	text-decoration:none;
+}
+
+.close-button:hover {
+	background: rgba(0,0,0,1);
+}
+
+@media screen and (max-width: 720px) {
+.popup-content {
+	width:90%;
+	}	
+	}
